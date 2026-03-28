@@ -7,10 +7,14 @@
 }
 
 .canvasContainer {
-  flex: 1;
   position: relative;
+  margin-left: 220px;
+  transition: margin-left .2s ease, width .2s ease;
+  width: calc(100vw - 220px);
+  height: 100%;
 }
 
 .canvasContainer.expanded {
-  /* When history is collapsed, canvas takes full width */
+  margin-left: 40px;
+  width: calc(100vw - 40px);
 }
